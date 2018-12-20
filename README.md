@@ -1,1 +1,1 @@
-# twrp_device_lenovo_x3
+# TWRP device tree for Lenovo ViBE X3

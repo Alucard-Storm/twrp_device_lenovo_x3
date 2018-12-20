@@ -7,4 +7,5 @@ ro.product.model=Lenovo VIBE X3
 ro.product.name=x3
 ro.product.device=x3
 ro.build.product=x3
+ro.lenovo.series=Lenovo X3
 ro.build.description=Team Win Recovery Project for  Lenovo VIBE X3
