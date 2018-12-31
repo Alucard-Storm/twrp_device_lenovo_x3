@@ -25,6 +25,9 @@
 
 DEVICE_TREE := device/lenovo/x3
 
+#Asserts
+TARGET_OTA_ASSERT_DEVICE := x3,X3c50,X3a40,X3c70,x3_row
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8992
 TARGET_NO_BOOTLOADER := true

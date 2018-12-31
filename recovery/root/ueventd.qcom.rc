@@ -25,6 +25,20 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+/dev/null                 0666   root       root
+/dev/zero                 0666   root       root
+/dev/full                 0666   root       root
+/dev/ptmx                 0666   root       root
+/dev/tty                  0666   root       root
+/dev/random               0666   root       root
+/dev/urandom              0666   root       root
+/dev/ashmem               0666   root       root
+/dev/binder               0666   root       root
+/dev/tspdrv               0666   root       root
+/dev/ttyHSL0             0660   radio      system
+# logger should be world writable (for logging) but not readable
+/dev/log/*                0666   root       log
+/dev/pmsg0                0222   root       log
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     qcom_diag
 
@@ -47,6 +61,7 @@
 /dev/ipaNatTable          0660   net_admin  net_admin
 /dev/rmnet_ctrl           0660   usb        usb
 /dev/dpl_ctrl             0660   usb        usb
+/dev/block/bootdevice/by-name/frp 0600 system system
 
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
