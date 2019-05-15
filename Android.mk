@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015-2018 The Android Open Source Project
+# Copyright 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,10 +23,9 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-ifneq ($(filter x3,$(TARGET_DEVICE)),)
-
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter x3, $(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 endif
